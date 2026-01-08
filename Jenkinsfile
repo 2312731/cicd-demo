@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                echo 'Cloning source code from GitHub'
+                echo "Cloning source code from GitHub"
             }
         }
         stage('Build Docker') {
