@@ -8,6 +8,12 @@ pipeline {
 
   stages {
 
+    stage('Clean') {
+      steps {
+        deleteDir()
+      }
+    }
+
     stage('Build') {
       steps {
         sh 'docker build -t $DOCKERHUB_USER/$IMAGE_NAME .'
