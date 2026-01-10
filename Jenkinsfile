@@ -2,14 +2,14 @@ pipeline {
   agent any
 
   environment {
-    DOCKERHUB_USER = 'MSSV'
+    DOCKERHUB_USER = '2312731'
     IMAGE_NAME = 'jenkins-app'
   }
 
   stages {
     stage('Pull') {
       steps {
-        git 'https://github.com/MSSV/cicd-demo.git'
+        git 'https://github.com/2312731/cicd-demo.git'
       }
     }
 
