@@ -7,11 +7,6 @@ pipeline {
   }
 
   stages {
-    stage('Pull') {
-      steps {
-        git 'https://github.com/2312731/cicd-demo.git'
-      }
-    }
 
     stage('Build') {
       steps {
@@ -59,3 +54,4 @@ pipeline {
     }
   }
 }
+
