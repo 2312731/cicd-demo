@@ -22,10 +22,7 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh '''
-                  docker tag 2312731/jenkins-app 2312731/jenkins-app:latest
-                  docker push 2312731/jenkins-app:latest
-                '''
+                sh 'docker push 2312731/jenkins-app'
             }
         }
     }
